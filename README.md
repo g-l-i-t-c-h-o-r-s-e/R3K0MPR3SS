@@ -8,5 +8,5 @@ Finally no more tedious re-uploads to hosting services.
 Basically we're just re-encoding the output several hundred times over until it squeezes the succulent glitch juices out.
 
 You can probably use this with any command line program as far as I know, I inluded a SoX sample for your listening pleasure.
-The ffmpeg sample has the -t 5 flag at the beginning to cut the input to 5 seconds for a quick example, remove when you like.
+The ffmpeg sample has the -t 5 flag at the beginning to cut the input to 5 seconds for a quick example, remove when you like. I also added -an to remove audio in the example, to speed up the process.
  
