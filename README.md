@@ -12,5 +12,5 @@ Basically we're just re-encoding the output several hundred times over until it 
 You can probably use this with any command line program as far as I know, I inluded a SoX sample for your listening pleasure.
 The ffmpeg sample has the -t 5 flag at the beginning to cut the input to 5 seconds for a quick example, remove when you like. I also added -an to remove audio in the example, to speed up the process.
  
-Also note when using r3k-img.sh, if you use other containers like bmp, ppm, etc; the artifacts are much different. 
+Also note when using r3k-img.sh, if you use other containers like bmp, ppm, xwd, etc; the artifacts are much different. That also includes the colorspace the container is using. (bgr24 in bmp)
 Don't forget to experiment the video/image quality.
