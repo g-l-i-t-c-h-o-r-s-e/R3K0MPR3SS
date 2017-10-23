@@ -2,5 +2,6 @@
 https://www.youtube.com/watch?v=fAxHlLK3Oyk
 
 https://en.wikipedia.org/wiki/I_Am_Sitting_in_a_Room
-
 # Thanks to my Roomate for his help on the code <3
+
+# use "ffmpeg -h encoder=bmp" or whatever to check what pix_fmts your image container of choice supports and such.
