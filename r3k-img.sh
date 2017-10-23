@@ -1,10 +1,10 @@
 #!/bin/sh
 
-ffmpeg -i $1 -y 1out.$2
+ffmpeg -i $1 -pix_fmt $4 -y 1out.$2
 
 a=1
 
-while [ $a -lt $5 ]
+while [ $a -lt $6 ]
 do
    file="`expr $a - 0`out.$2"
    old="`expr $a - 1`out.$2"
@@ -12,9 +12,9 @@ do
    #echo $old
    #echo $fil
    echo $remove
-   ffmpeg -i $old -vcodec $3 -q:v $4 -f avi - | ffmpeg -i - -y $file
+   ffmpeg -i $old -vcodec $3 -strict -2 -q:v $5 -f avi - | ffmpeg -i - -pix_fmt $4 -y $file
    rm -f $remove
-   if [ $a -eq $5 ]
+   if [ $a -eq $6 ]
    then
       break
    fi
