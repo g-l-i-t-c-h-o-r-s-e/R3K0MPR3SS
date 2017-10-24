@@ -1,3 +1,9 @@
+# What do I need, b0ss?!
+
+```sudo apt-get install ffmpeg```
+
+```sudo apt-get install sox```
+
 # Usage
 ./r3k-ffmpeg.sh input.avi h263p 100
 
