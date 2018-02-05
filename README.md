@@ -31,7 +31,7 @@ Also note when using r3k-img.sh, if you use other containers like bmp, ppm, xwd,
 
 Don't forget to tinker with the video/image quality.
 
-# ? 
+# !!!
 But wait, there's more! 
 
 r3k-img-chexr is pretty much the same as r3k-img.sh but with hex replacement.
@@ -39,3 +39,10 @@ r3k-img-chexr is pretty much the same as r3k-img.sh but with hex replacement.
 r3k-ffmpeg-vf takes a different approach by applying video filters numerous times to a single image.
 
 r3k-ffmpeg-af is the same as the above script but with audio effects. You can also adjust the audio quality when working with lossy formats.
+
+
+When working with the video filter and audio filter scripts, you can adjust filter settings by separating the parameters listed with "ffmpeg -h filter=filtername" like so:
+
+./r3k-ffmpeg-af.sh input.mp3 wav 0 25 compand 0.3:0.8:-70/-70:900:0:0:3 compand 0.3:0.8:-70/-70:900:0:0:3
+
+./r3k-ffmpeg-vf.sh input.png bmp 0 100 erosion threshold0=1:threshold1=1:threshold2=1:threshold3=1:coordinates=5 atadenoise 0a=0.3:0b=5:1a=0.3:1b=5:2a=0.3:2b=5:s=5:p=7
