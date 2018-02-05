@@ -15,7 +15,7 @@
 
 ./r3k-img-chexr.sh input.png bmp libtheora bgr24 100 50 0111 0109
 
-./r3k-ffmpeg-vf.sh input.png bmp 0 30 erosion 6 hqdn3d 100
+./r3k-ffmpeg-vf.sh input.png bmp bgr24 0 30 erosion 6 hqdn3d 100
 
 ./r3k-ffmpeg-af.sh input.mp3 wav 0 5 atempo 0.5 atempo 1.50
 
@@ -45,4 +45,4 @@ When working with the video filter and audio filter scripts, you can adjust filt
 
 ./r3k-ffmpeg-af.sh input.mp3 wav 0 25 compand 0.3:0.8:-70/-70:900:0:0:3 compand 0.3:0.8:-70/-70:900:0:0:3
 
-./r3k-ffmpeg-vf.sh input.png bmp 0 100 erosion threshold0=1:threshold1=1:threshold2=1:threshold3=1:coordinates=5 atadenoise 0a=0.3:0b=5:1a=0.3:1b=5:2a=0.3:2b=5:s=5:p=7
+./r3k-ffmpeg-vf.sh input.png bmp bgr24 0 100 erosion threshold0=1:threshold1=1:threshold2=1:threshold3=1:coordinates=5 atadenoise 0a=0.3:0b=5:1a=0.3:1b=5:2a=0.35:2b=5:s=5:p=7
