@@ -34,7 +34,7 @@ Don't forget to tinker with the video/image quality.
 # !!!
 But wait, there's more! 
 
-r3k-img-chexr is pretty much the same as r3k-img.sh but with hex replacement.
+r3k-img-chexr is pretty much the same as r3k-img.sh but with hex replacement and a lot more organized.
 
 r3k-ffmpeg-vf takes a different approach by applying video filters numerous times to a single image.
 
