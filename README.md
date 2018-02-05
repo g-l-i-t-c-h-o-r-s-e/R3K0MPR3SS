@@ -4,6 +4,8 @@
 
 ```sudo apt-get install sox```
 
+```https://github.com/atagen/chexr```
+
 # Usage
 ./r3k-ffmpeg.sh input.avi h263p 100
 
