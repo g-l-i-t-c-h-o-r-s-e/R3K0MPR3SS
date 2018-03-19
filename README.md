@@ -19,6 +19,8 @@
 
 ./r3k-ffmpeg-af.sh input.mp3 wav 0 5 atempo 0.5 atempo 1.50
 
+./r3k-acodec-chexr.sh input.mp3 avi wmav1 15 0 10 0003 0099
+
 # oWo???
 Finally no more tedious re-uploads to hosting services.
 Basically we're just re-encoding the output several hundred times over until it squeezes the succulent glitch juices out.
@@ -40,6 +42,7 @@ r3k-ffmpeg-vf takes a different approach by applying video filters numerous time
 
 r3k-ffmpeg-af is the same as the above script but with audio effects. You can also adjust the audio quality when working with lossy formats.
 
+r3k-acodec-chexr.sh is a mod of r3k-img-chexr. The variable order goes as such: input, container format (nut or avi), acodec, input duration, audio quality, amount of times to process, hex target, hex replacement (replace 0099 with 0066)
 
 When working with the video filter and audio filter scripts, you can adjust filter settings by separating the parameters listed with "ffmpeg -h filter=filtername" like so:
 
